@@ -77,15 +77,49 @@
 * **Model_1E**: Reduced learning rate
 * **Model_1F**: with Data Augmentation
 
-* **Comparison of ModelS**:
+* **Comparison of Models**:
 ![Model_1A-1C](viz/Model_1A-1C.JPG)
-![Model_2A-2C](viz/Model_1C_2-1D_2.JPG)
-![Model_2A-2C](viz/Model_1E-1F.JPG)
-![Model_2A-2C](viz/Model_2A-2C.JPG)
-![Model_2A-2C](viz/Model_2D-2E.JPG)
+![Model_1C_2-1D_2](viz/Model_1C_2-1D_2.JPG)
+![Model_1E-1F](viz/Model_1E-1F.JPG)
 
 ## Image Classification Model 2: Utilizing Pre-Train Model
+* **Pre-Train Model**:
+    * VGG16
+    * Imagenet - pre-trained with 1000 classes with 1.4M image samples
+    * Exclude classifier portion
+    * Input image size: 150 x 150 px; 3 channels
+* **Model_2A (Feature Extraction without Data Augmentation)**: 
+    * Model Type: Sequential
+    * Feature Extraction Layers: 
+      * Convolutional Base (Pre-train Model) - Freeze
+      * Flatten (to convert from 3D to 1D tensor)
+    * Classifier Layers
+      * Dense Layer (ReLU)
+      * Dense Layer (Softmax); 10 classes 
+* **Compile the Model**:
+    * Optimizer: RMSprop; learning rate: 0.00001
+    * Loss Function: categorical_crossentropy
+* **Train the Model**:
+    * For Training: 
+      * Preprocessed training dataset (train_generator)
+      * Training Batch Size: 75
+      * Steps per Epoch: 100 (7500 images)
+    * For Validation: 
+      * Preprocessed validation dataset (validation_generator)
+      * Validation Batch Size: 40
+      * Validation steps: 50 (2000 images)
+    * Epoch: 100
+* **Plot Training and Validation Accuracy and Loss**:
+    * Accuracy against Epoch
 
+* **Model_2B**: Feature Extraction with Data Augmentation
+* **Model_2C**: Feature Extraction with Fine Tuning and Reduced Learning Rate (with Data Augmentation)
+* **Model_2D**: Feature Extraction with Dropout Layer (with Fine Tuning, Reduced Learning Rate and Data Augmentation)
+* **Model_2E**: Feature Extraction with L2 Weight Regularization (with Dropout Layer, Fine Tuning, Reduced Learning Rate and Data Augmentation)
+
+* **Comparison of Models**:
+![Model_2A-2C](viz/Model_2A-2C.JPG)
+![Model_2D-2E](viz/Model_2D-2E.JPG)
 
 ## Evaluate Models using Test images
 
