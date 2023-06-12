@@ -78,11 +78,11 @@
 * **Model_1F**: with Data Augmentation
 
 * **Comparison of ModelS**:
-![Model_1A-1C](viz/Model_1A-1C.jpg)
-![Model_2A-2C](viz/Model_1C_2-1D_2.jpg)
-![Model_2A-2C](viz/Model_1E-1F.jpg)
-![Model_2A-2C](viz/Model_2A-2C.jpg)
-![Model_2A-2C](viz/Model_2D-2E.jpg)
+![Model_1A-1C](viz/Model_1A-1C.JPG)
+![Model_2A-2C](viz/Model_1C_2-1D_2.JPG)
+![Model_2A-2C](viz/Model_1E-1F.JPG)
+![Model_2A-2C](viz/Model_2A-2C.JPG)
+![Model_2A-2C](viz/Model_2D-2E.JPG)
 
 ## Image Classification Model 2: Utilizing Pre-Train Model
 
