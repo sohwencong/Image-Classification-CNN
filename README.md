@@ -41,7 +41,7 @@
 ## Image Classification Model 1: Train from Scratch
 * **Library / Packages**: Tensorflow, Keras, Layers, Models, Optimizers, Pyplot, Matplotlib 
 * **Build the Model**: We start with a baseline model (model_1A) and build up and improve the model subsequently
-* **Model_1A (Baseline)**
+* **Model_1A (Baseline)**:
     * Model Type: Sequential
     * Feature Extraction Layers
       * Conv2D (ConvNet)
@@ -69,13 +69,20 @@
 * **Plot Training and Validation Accuracy and Loss**:
     * Accuracy against Epoch
 
-* **Model_1B (Increased network size)**
-* **Model_1C (Added L2 weight regularization)**
-* **Model_1C_2 (Added L2 weight regularization with Average-Pooling and Adam optimizer)**
-* **Model_1D (Added dropout layer)**
-* **Model_1D_2 (Added dropout layer with Average-Pooling and SGD optimizer)**
-* **Model_1E (Reduced learning rate)**
-* **Model_1F (with Data Augmentation)**
+* **Model_1B**: Increased network size
+* **Model_1C**: Added L2 weight regularization
+* **Model_1C_2**: Added L2 weight regularization with Average-Pooling and Adam optimizer
+* **Model_1D**: Added dropout layer
+* **Model_1D_2**: Added dropout layer with Average-Pooling and SGD optimizer
+* **Model_1E**: Reduced learning rate
+* **Model_1F**: with Data Augmentation
+
+* **Comparison of ModelS**:
+![Model_1A-1C](viz/Model_1A-1C.jpg)
+![Model_2A-2C](viz/Model_1C_2-1D_2.jpg)
+![Model_2A-2C](viz/Model_1E-1F.jpg)
+![Model_2A-2C](viz/Model_2A-2C.jpg)
+![Model_2A-2C](viz/Model_2D-2E.jpg)
 
 ## Image Classification Model 2: Utilizing Pre-Train Model
 
