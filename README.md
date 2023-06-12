@@ -39,7 +39,43 @@
     * Standardize image size to 150 x 150 px
   
 ## Image Classification Model 1: Train from Scratch
-* **Library / Packages**: Tensorflow, Keras, Layers, Models, Optimizers 
+* **Library / Packages**: Tensorflow, Keras, Layers, Models, Optimizers, Pyplot, Matplotlib 
+* **Build the Model**: We start with a baseline model (model_1A) and build up and improve the model subsequently
+* **Model_1A (Baseline)**
+    * Model Type: Sequential
+    * Feature Extraction Layers
+      * Conv2D (ConvNet)
+      * Activation Function: ReLU
+      * Number of filters; Filter size: 3 x 3 px
+      * Input image size: 150 x 150 px; 3 channels
+      * Max-Pooling: 2 x 2 px
+      * Flatten (to convert from 3D to 1D tensor)
+    * Classifier Layers
+      * Dense Layer (ReLU)
+      * Dense Layer (Softmax); 10 classes 
+* **Compile the Model**:
+    * Optimizer: RMSprop; learning rate: 0.001
+    * Loss Function: categorical_crossentropy
+* **Train the Model**:
+    * For Training: 
+      * Preprocessed training dataset (train_generator)
+      * Training Batch Size: 75
+      * Steps per Epoch: 100 (7500 images)
+    * For Validation: 
+      * Preprocessed validation dataset (validation_generator)
+      * Validation Batch Size: 40
+      * Validation steps: 50 (2000 images)
+    * Epoch: 30 - 100
+* **Plot Training and Validation Accuracy and Loss**:
+    * Accuracy against Epoch
+
+* **Model_1B (Increased network size)**
+* **Model_1C (Added L2 weight regularization)**
+* **Model_1C_2 (Added L2 weight regularization with Average-Pooling and Adam optimizer)**
+* **Model_1D (Added dropout layer)**
+* **Model_1D_2 (Added dropout layer with Average-Pooling and SGD optimizer)**
+* **Model_1E (Reduced learning rate)**
+* **Model_1F (with Data Augmentation)**
 
 ## Image Classification Model 2: Utilizing Pre-Train Model
 
