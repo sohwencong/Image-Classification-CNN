@@ -13,13 +13,13 @@
 ## Overview
 * **Objective**: To build an image classification model to recognize and classify 10 different types of food
 * **Framework: Universal Workflow of Machine Learning**<br>
-    step 1. Defining the problem and assembling a dataset<br>
-    step 2. Choosing a measure of success<br>
-    step 3. Choosing a measure of success<br>
-    step 4. Choosing a measure of success<br>
-    step 5. Choosing a measure of success<br>
-    step 6. Choosing a measure of success<br>
-    step 7. Choosing a measure of success<br>
+    a. Defining the problem and assembling a dataset<br>
+    b. Choosing a measure of success<br>
+    c Choosing a measure of success<br>
+    d. Choosing a measure of success<br>
+    e. Choosing a measure of success<br>
+    f. Choosing a measure of success<br>
+    g. Choosing a measure of success<br>
     
         
 
