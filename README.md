@@ -129,6 +129,17 @@
     * Hence, best model among these is model_2D
 
 ## Best Model to Perform Classification
-
+* The best model, model_2D, managed to correctly classify all 3 images downloaded from the internet!
+![bibimbap](viz/bibimbap.jpg)
+![cup_cakes](viz/cup_cakes.jpg)
+![cup_cakes](viz/cup_cakes.jpg)
 
 ## Summary
+ * Conclusion
+   * Utilizing pre-trained models for feature extraction layers proved to be a better method than training from scratch
+   * Testing accuracies for models utilizing pre-trained models ranged from 70.6% to 81.2% while it ranged from 20.6% to 72.4% only
+   * Models trained with data augmented training images performed significantly better than those that did not too
+ * Future Improvements
+   * Explore the use of other pre-trained models, eg. Xception, ResNet, InceptionV3, etc
+   * Continue to tune the hyperparameters to get better performance
+   * Further fine-tune the convolution base layers
