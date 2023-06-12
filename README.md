@@ -122,7 +122,11 @@
 ![Model_2D-2E](viz/Model_2D-2E.JPG)
 
 ## Evaluate Models using Test images
-
+![Evaluate_models_using_test_images](viz/Evaluate_models_using_test_images.jpg)
+* **Comments**:
+    * model_2D and model_2E yielded the best performance of 81.2%
+    * However, according to the plotted accuracy and loss vs epoch curves, model_2E does not seem to have any better performance. This may be due to the regularization did not take effect.
+    * Hence, best model among these is model_2D
 
 ## Best Model to Perform Classification
 
