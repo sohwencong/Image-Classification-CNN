@@ -12,7 +12,7 @@
 
 ## Overview
 * **Objective**: To build an image classification model to recognize and classify 10 different types of food
-* **Framework: Universal Workflow of Machine Learning**
+* **Framework: Universal Workflow of Machine Learning**<br>
     a. Define the problem and assemble a dataset<br>
     b. Choose a measure of success<br>
     c. Decide on an evaluation protocol<br>
