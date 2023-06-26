@@ -132,7 +132,7 @@
 * The best model, model_2D, managed to correctly classify all 3 images downloaded from the internet!
 ![bibimbap](viz/bibimbap.jpg)
 ![cup_cakes](viz/cup_cakes.jpg)
-![cup_cakes](viz/cup_cakes.jpg)
+![tiramisu](viz/tiramisu.jpg)
 
 ## Summary
  * Conclusion
